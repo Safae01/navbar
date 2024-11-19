@@ -38,12 +38,79 @@
   font-size: 23px;
   display: flex;
   width: 10%;
+  position: relative;
+}
+.details-QR{
+  visibility: hidden;
+  background-color: white;
+  height: 206px;
+  width: 331px;
+  position: absolute;
+  top: 49px;
+  left: -98px;
+  border-radius: 27px;
+}
+.details-QR::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -67px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+.scannez{
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  left: 153px;
+  top: 50px;
+  font-weight: bold;
+}
+.QR:hover .details-QR{
+  visibility: visible;
 }
 .login {
   color: white;
   font-size: 23px;
   display: flex;
   width: 10%;
+  position: relative;
+  cursor: pointer;
+}
+.details-login{
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  height: 229px;
+  width: 208px;
+  top: 39px;
+  left: -94px;
+  border-radius: 31px;
+}
+.details-login::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+.login:hover .details-login{
+  visibility: visible;
+}
+.cnx{
+font-size: 17px;
+position: absolute;
+display: flex;
+flex-direction: column;
+align-items: center;
+top: 41px;
+left: 18px;
+color: black;
 }
 .store {
   color: white;
@@ -57,6 +124,14 @@
   height: 31px;
   /* position: relative; */
 }
+
+.header2 {
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+  height: 55px;
+}
 .all_categories {
   color: white;
   background-color: #535353;
@@ -65,23 +140,53 @@
   width: 20%;
   display: flex;
   justify-content: space-around;
+  position: relative;
+  cursor: pointer;
 }
-
-.header2 {
-  display: flex;
-  background-color: black;
-  justify-content: space-around;
-  align-items: center;
-}
-.list {
-  display: flex;
+.list1{
+  visibility: hidden;
+  position: absolute;
   list-style-type: none;
+  top: 33px;
+  background-color: #535353;
+  padding: 10PX 82PX;
+  border-radius: 24px;
 }
-li a {
+.list1 li{
+ padding: 10px;
+}
+.list1 li a{
   text-decoration: none;
   color: white;
 }
-li {
-  /* background-color: red; */
-  padding: 22px 33px;
+.all_categories:hover .list1{
+  visibility: visible;
+}
+.list2 {
+  display: flex;
+  list-style-type: none;
+}
+.list2 li a {
+  text-decoration: none;
+  color: white;
+}
+.list2 li {
+  padding: 7px 33px;
+}
+.list2 li:hover{
+  background-color: #535353;
+  font-size: 17px;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.btn-login{
+  background-color: black;
+  color: white;
+  padding: 5px 45px;
+  border-radius: 22px;
+}
+input{
+  border-radius: 10px;
+  cursor: pointer;
 }
