@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  margin: 0;
+  padding: 0;
+}
+.header1 {
+  background-color: black;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 10px;
+  align-items: center;
+}
+.search {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.logo {
+  color: white;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.profil {
+  display: flex;
+  width: 31%;
+  justify-content: center;
+  gap: 13%;
+}
+.QR {
+  color: white;
+  font-size: 23px;
+  display: flex;
+  width: 10%;
+}
+.login {
+  color: white;
+  font-size: 23px;
+  display: flex;
+  width: 10%;
+}
+.store {
+  color: white;
+  font-size: 23px;
+  display: flex;
+  width: 10%;
+}
+.chercher {
+  width: 100%;
+  border-radius: 20px;
+  height: 31px;
+  /* position: relative; */
+}
+.all_categories {
+  color: white;
+  background-color: #535353;
+  border-radius: 20px;
+  padding: 7px;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header2 {
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  align-items: center;
+}
+.list {
+  display: flex;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  /* background-color: red; */
+  padding: 22px 33px;
+}
